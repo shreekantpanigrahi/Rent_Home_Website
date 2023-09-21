@@ -378,13 +378,6 @@ color : var( --first-color);
   color: var(--text-color-light);
   font-size:var(--smaller-font-size);
 }
-
-.home__images{
- /* position:relative;
-  display: flex;
-  justify-content: center;*/
-}
-
 .home__orbe{
   width:265px;
   height: 284px;
@@ -405,9 +398,6 @@ color : var( --first-color);
   bottom : -1.5rem;
   box-shadow: 0 16px 32px hsl(228,66%,25%,.25);
 }
-
-
-
 
 /*=============== BUTTON ===============*/
 
@@ -540,14 +530,10 @@ color : var( --first-color);
   box-shadow: 0 12px 16px hsl(228 ,66%,45%,.1);
 }
 
-
-
-
 /* Swiper class */
 .swiper-button-prev::after,
 .swiper-button-next::after{
   content:'';
-
 }
 
 .swiper-button-next,
@@ -562,7 +548,6 @@ color : var( --first-color);
   border-radius: .5rem;
   font-size: 1.5rem;
   color:var(--first-color);
-
 }
 
 .swiper-button-prev{
@@ -683,16 +668,13 @@ color : var( --first-color);
   background-color: aqua;
 } */
 
-
 /*Rotate icon and add shadows*/
 .accordion-open{
   box-shadow: 0 12px 32px hsla(228, 66%, 45%, .1);
-
 }
 
 .accordion-open .value__accordion-icon{
   box-shadow: 0 4px 4px hsla(228, 66%, 45%, .1);
-
 }
 
 .accordion-open .value__accordion-arrow{
@@ -702,8 +684,6 @@ color : var( --first-color);
 .accordion-open .value__accordion-arrow i{
   transform: rotate(-180deg);
 }
-
-
 
 /*=============== CONTACT ===============*/
 .contact__container{
@@ -739,18 +719,15 @@ color : var( --first-color);
 
 }
 
-
 .contact__description{
   font-size: var(--small-font-size);
   margin-bottom: 2.5rem;
 }
 
-
 .contact__card{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap:1.25rem .75rem;
-
 }
 
 .contact__card-box{
@@ -775,7 +752,6 @@ color : var( --first-color);
   border-radius: 6px;
   font-size: 1.25rem;
   color:var(--first-color);
-
 }
 
 .contact__card-title{
@@ -785,7 +761,6 @@ color : var( --first-color);
 
 .contact__card-description{
   font-size: var(--smaller-font-size);
-
 }
 
 .contact__card-button{
@@ -797,9 +772,7 @@ color : var( --first-color);
   color: var(--first-color);
   font-weight: var(--font-semi-bold);
   box-shadow: none;
-
 }
-
 
 .contact__card-button:hover{
   background-color: var(--first-color);
@@ -827,12 +800,10 @@ color : var( --first-color);
   
 }
 
-
 .subscribe__title{
   font-size: var(--h2-font-size);
   color: #fff;
   margin-bottom: 1rem;
-
 }
 
 .subscribe__description{
@@ -845,16 +816,12 @@ color : var( --first-color);
   border: 2px solid  blue;
   background-color:blue;
   font-size: var(--small-font-size);
-  
 }
 
 .subscribe__button:hover{
   background-color: var(--first-color);
 
 }
-
-
-
 
 /*=============== FOOTER ===============*/
 .footer__container{
@@ -931,7 +898,6 @@ color : var( --first-color);
 .footer__info,
 .footer__privacy{
   display: flex;
-
 }
 
 .footer__info{
@@ -953,9 +919,6 @@ color : var( --first-color);
   justify-content: center;
   column-gap: 1.25rem;
 }
-
-
-
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar{
@@ -1230,6 +1193,58 @@ color : var( --first-color);
   .logos__img img{
     height: 100px;
   }
+
+  #searchResultsContainer {
+    margin-top: 20px; /* Add some spacing between search bar and results */
+    background-color: #f5f5f5; /* Background color for the results container */
+    border: 1px solid #ddd; /* Add a subtle border */
+    border-radius: 8px; /* Rounded corners for the container */
+    padding: 20px; /* Add padding for content spacing */
+  }
+  
+  #searchResultsContainer h2 {
+    font-size: 24px; /* Heading font size */
+    margin-bottom: 20px; /* Spacing below the heading */
+    color: #333; /* Heading text color */
+  }
+  
+  #searchResultsContainer ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+    display: flex; /* Display result items horizontally */
+    flex-wrap: wrap; /* Allow result items to wrap to the next row */
+    justify-content: space-between; /* Distribute items evenly */
+  }
+  
+  #searchResultsContainer li {
+    width: calc(33.33% - 20px); /* Adjust the width for three listings per row with spacing */
+    margin-bottom: 20px; /* Spacing between each result item */
+    background-color: #fff; /* Background color for each listing */
+    padding: 20px; /* Add padding for content spacing */
+    border: 1px solid #ddd; /* Add a border to each listing */
+    border-radius: 8px; /* Rounded corners for each listing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for each listing */
+    transition: background-color 0.3s ease; /* Add a smooth hover effect */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+  }
+  
+  /* Style for specific result properties (e.g., Title, Size, etc.) */
+  #searchResultsContainer li {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Style for "Semifurnished" (change colors based on your design) */
+  #searchResultsContainer li span.semifurnished {
+    color: #4CAF50; /* Green for 'Yes' */
+  }
+  
+  /* Add hover effect for each result item */
+  #searchResultsContainer li:hover {
+    background-color: #f9f9f9; /* Light gray background on hover */
+  }
+  
+
   .popular__container{
     padding-top: 3rerm;
   }
@@ -1333,7 +1348,6 @@ color : var( --first-color);
     column-gap: 4rem;
   }
 }
-
 
 /* For 2K & 4K resolutions */
 @media screen and (min-width:2048px){

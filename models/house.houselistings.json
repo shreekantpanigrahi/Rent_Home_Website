@@ -1,0 +1,372 @@
+[{
+  "_id": {
+    "$oid": "650b0e006f87da66cda677a6"
+  },
+  "location": "Kharghar",
+  "title": "Ranja Heights",
+  "size": 250,
+  "ownAmount": 250000,
+  "rent": 10000,
+  "star": 3.6,
+  "semiFurnished": true
+},
+{
+  "_id": {
+    "$oid": "650b0f136f87da66cda677a8"
+  },
+  "location": "Kharghar",
+  "title": "Suresh Sadan",
+  "size": 267,
+  "ownAmount": 280000,
+  "rent": 10500,
+  "star": 4,
+  "semiFurnished": true
+},
+{
+  "_id": {
+    "$oid": "650b11506f87da66cda677a9"
+  },
+  "location": "Kharghar",
+  "title": "Ganesh Complex",
+  "size": 650,
+  "ownAmount": 220000,
+  "rent": 10500,
+  "star": 2.8,
+  "semiFurnished": false
+},
+{
+  "_id": {
+    "$oid": "650b12006f87da66cda677aa"
+  },
+  "location": "Belapur CBD",
+  "title": "JK Sadan",
+  "size": 275,
+  "ownAmount": 280000,
+  "rent": 12000,
+  "star": 4.9,
+  "semiFurnished": true
+},
+{
+  "_id": {
+    "$oid": "650b15216f87da66cda677ab"
+  },
+  "location": "Belapur CBD",
+  "title": "Priya Residency",
+  "size": 300,
+  "ownAmount": 350000,
+  "rent": 13000,
+  "star": 4.6,
+  "semiFurnished": true
+},
+{
+  "_id": {
+    "$oid": "650b15646f87da66cda677ac"
+  },
+  "location": "Kharghar",
+  "title": "Pancharatna Society",
+  "size": 220,
+  "ownAmount": 230000,
+  "rent": 8000,
+  "star": 2.8,
+  "semiFurnished": false
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab8061"
+  },
+  "location": "Belapur CBD",
+  "title": "1010 West Junction",
+  "size": 447,
+  "ownAmount": 321773,
+  "rent": 11734,
+  "star": 4.7,
+  "semiFurnished": false
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab8062"
+  },
+  "location": "Vashi",
+  "title": "490 Talmadge Hill",
+  "size": 540,
+  "ownAmount": 614487,
+  "rent": 13862,
+  "star": 4.94,
+  "semiFurnished": false
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab8063"
+  },
+  "location": "Nerul",
+  "title": "53796 Oneill Plaza",
+  "size": 323,
+  "ownAmount": 699161,
+  "rent": 11732,
+  "star": 3.77,
+  "semiFurnished": false
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab8064"
+  },
+  "location": "Belapur CBD",
+  "title": "36336 Nova Avenue",
+  "size": 716,
+  "ownAmount": 302368,
+  "rent": 12883,
+  "star": 4.26,
+  "semiFurnished": true
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab8065"
+  },
+  "location": "Nerul",
+  "title": "74 Veith Place",
+  "size": 570,
+  "ownAmount": 259493,
+  "rent": 16319,
+  "star": 1.44,
+  "semiFurnished": true
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab8066"
+  },
+  "location": "Nerul",
+  "title": "1 Starling Center",
+  "size": 267,
+  "ownAmount": 409036,
+  "rent": 22573,
+  "star": 3.7,
+  "semiFurnished": false
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab8067"
+  },
+  "location": "Nerul",
+  "title": "7359 Sutherland Plaza",
+  "size": 871,
+  "ownAmount": 560262,
+  "rent": 20516,
+  "star": 1.25,
+  "semiFurnished": true
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab8068"
+  },
+  "location": "Nerul",
+  "title": "5494 Lawn Junction",
+  "size": 327,
+  "ownAmount": 627175,
+  "rent": 12248,
+  "star": 2.98,
+  "semiFurnished": false
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab8069"
+  },
+  "location": "Vashi",
+  "title": "2673 Melody Junction",
+  "size": 984,
+  "ownAmount": 726652,
+  "rent": 24420,
+  "star": 2.13,
+  "semiFurnished": true
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab806a"
+  },
+  "location": "Nerul",
+  "title": "3234 Goodland Circle",
+  "size": 670,
+  "ownAmount": 423407,
+  "rent": 17985,
+  "star": 3.93,
+  "semiFurnished": false
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab806b"
+  },
+  "location": "Belapur CBD",
+  "title": "1 Thierer Avenue",
+  "size": 747,
+  "ownAmount": 330431,
+  "rent": 23828,
+  "star": 4.8,
+  "semiFurnished": false
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab806c"
+  },
+  "location": "Kharghar",
+  "title": "576 New Castle Terrace",
+  "size": 237,
+  "ownAmount": 700753,
+  "rent": 11176,
+  "star": 3.79,
+  "semiFurnished": false
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab806d"
+  },
+  "location": "Vashi",
+  "title": "12 Vahlen Avenue",
+  "size": 484,
+  "ownAmount": 609900,
+  "rent": 15367,
+  "star": 3.1,
+  "semiFurnished": true
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab806e"
+  },
+  "location": "Kharghar",
+  "title": "4659 Melvin Street",
+  "size": 229,
+  "ownAmount": 295325,
+  "rent": 19121,
+  "star": 4.16,
+  "semiFurnished": false
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab806f"
+  },
+  "location": "Lae",
+  "title": "74 Old Gate Court",
+  "size": 890,
+  "ownAmount": 795194,
+  "rent": 22493,
+  "star": 1.57,
+  "semiFurnished": true
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab8070"
+  },
+  "location": "Simpangpasir",
+  "title": "2 Evergreen Drive",
+  "size": 457,
+  "ownAmount": 624816,
+  "rent": 15796,
+  "star": 4.98,
+  "semiFurnished": true
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab8071"
+  },
+  "location": "Karnobat",
+  "title": "42 Sycamore Lane",
+  "size": 889,
+  "ownAmount": 785348,
+  "rent": 16638,
+  "star": 3.89,
+  "semiFurnished": false
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab8072"
+  },
+  "location": "Pajoreja",
+  "title": "9400 Mandrake Terrace",
+  "size": 471,
+  "ownAmount": 754189,
+  "rent": 14424,
+  "star": 2.25,
+  "semiFurnished": true
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab8073"
+  },
+  "location": "Sokodé",
+  "title": "6276 Judy Way",
+  "size": 408,
+  "ownAmount": 888570,
+  "rent": 16564,
+  "star": 2.67,
+  "semiFurnished": false
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab8074"
+  },
+  "location": "Mondorf-les-Bains",
+  "title": "7655 Grover Alley",
+  "size": 909,
+  "ownAmount": 278752,
+  "rent": 11686,
+  "star": 1.71,
+  "semiFurnished": true
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab8075"
+  },
+  "location": "Madang",
+  "title": "03355 Magdeline Trail",
+  "size": 832,
+  "ownAmount": 273392,
+  "rent": 8225,
+  "star": 4.12,
+  "semiFurnished": false
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab8076"
+  },
+  "location": "Galyugayevskaya",
+  "title": "456 Scofield Park",
+  "size": 799,
+  "ownAmount": 576097,
+  "rent": 8125,
+  "star": 4.97,
+  "semiFurnished": false
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab8077"
+  },
+  "location": "Baru",
+  "title": "56 Moland Junction",
+  "size": 520,
+  "ownAmount": 568484,
+  "rent": 19383,
+  "star": 2.08,
+  "semiFurnished": true
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab8078"
+  },
+  "location": "Walichnowy",
+  "title": "4058 Swallow Lane",
+  "size": 462,
+  "ownAmount": 733824,
+  "rent": 22603,
+  "star": 2.28,
+  "semiFurnished": true
+},
+{
+  "_id": {
+    "$oid": "650c4d505d91699945ab8079"
+  },
+  "location": "Aş Şalw",
+  "title": "83141 Northland Park",
+  "size": 221,
+  "ownAmount": 885207,
+  "rent": 8278,
+  "star": 2.74,
+  "semiFurnished": true
+}]
