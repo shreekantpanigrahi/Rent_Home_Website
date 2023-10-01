@@ -1211,7 +1211,7 @@ color : var( --first-color);
   #searchResultsContainer ul {
     list-style: none; /* Remove default list styles */
     padding: 0;
-    display: flex; /* Display result items horizontally */
+    display: inline-flex; /* Display result items horizontally */
     flex-wrap: wrap; /* Allow result items to wrap to the next row */
     justify-content: space-between; /* Distribute items evenly */
   }

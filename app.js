@@ -16,6 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')));
       try {
         houselistings = await HouseListing.find({ $text : { $search: req.query.location}});
         console.log('Found listings:', houselistings); // Add this line for debugging
+        res.json(houselistings);
       } catch (error) {
         if (!res.headersSent) {
           console.error('Error', error);
