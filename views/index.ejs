@@ -5,18 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
 
         <!--=============== BOXICONS ===============-->
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
         
         <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
 
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="/assets/css/styles.css">
 
-        <title>RealaState</title>
+        <title>Real Estate</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
@@ -59,11 +59,10 @@
                 </div>
                 <!---theme change button-->
                 <i class='bx bx-moon change theme' id="theme-button"></i>
-                <a href="http://127.0.0.1:5500/responsive-real-state-website-main/HolexLoginPage/newindex.html" class="button nav__button">
+                <a href="/login" class="button nav__button">
                     Login
                 </a>
             </nav>
-            
         </header>
 
         <!--==================== MAIN ====================-->
@@ -77,7 +76,7 @@
                                 <div class="home__orbe">
                                 
                                 <div class="home__img">
-                                    <img src="assets/img/home.jpg" alt="Home page">
+                                    <img src="/assets/img/home.jpg" alt="Home page">
                                 </div>
                                 </div>
                             </div>
@@ -86,24 +85,20 @@
                             Discover <br> Most Suitable<br> Property
                         </h1>
                         <p class="home__description">
-                            Find a property that suitw very easily'
+                            Find a property that suits very easily'
                             forget all difficulties in finding a residence for you
                         </p>
                     </div>
-                    ,<form action="" class="home__search">
+                    ,<form action="/" method="GET" class="home__search">
                         <i class='bx bx-map' ></i>
-                        <form autocomplete="off" action="/action_page.php">
-                            <div class="autocomplete" style="width:300px;">
-                              <input id="myInput" type="text" name="search_location" placeholder="search_location" class="home__search--input">
-                            </div>
-                            <!-- <button id='search_e' >Search</button> -->
-                            <a href="#popular" id='search_e' class="button subscribe__button">
-                                Search
-                            </a>    
-
-                          </form>
-                          <script src="Filter/dropdown.js"></script> 
+                        <div class="autocomplete" style="width:300px;">
+                            <input id="myInput" type="text" name="location" placeholder="Enter location" class="home__search--input">
+                        </div>
+                        <button type="submit" class="button subscribe__button">
+                            Search
+                        </button>
                     </form>
+                    
                     <div class="home__value">
                         <div>
                             <h1 class="home__value-number">
@@ -126,50 +121,52 @@
                                 28k <span>+</span>
                             </h1>
                             <span class="home__value-description">
-                                Awards <br> Winers
+                                Awards <br> Winners
                             </span>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!--==================== LOGOS ====================-->
-            <section class="logos section">
-            <div class="logos__container container grid">
-                <div class="logos__img">
-                    <img src="assets/img/logo1.png" alt="">
-                </div>
-                <div class="logos__img">
-                    <img src="assets/img/logo2.png" alt="">
-                </div>
-                <div class="logos__img">
-                    <img src="assets/img/logo3.png" alt="">
-                </div>
-                <div class="logos__img">
-                    <img src="assets/img/logo4.png" alt="">
-                </div>
+            <div id="searchResultsContainer">
+                <h2>Your Following Result:</h2>
+                <ul>
+                    <% if (houselistings.length > 0) { %>
+                        <% houselistings.forEach(house => { %>
+                            <li>
+                                Property Name: <%= house.title %><br>
+                                Size: <%= house.size %><br>
+                                Own Amount: <%= house.ownAmount %><br>
+                                Rent: <%= house.rent %><br>
+                                Star: <%= house.star %><br>
+                                Semifurnished: <%= house.semiFurnished ? 'Yes' : 'No' %><br><br>
+                            </li>
+                        <% }) %>
+                    <% } else { %>
+                        <p>No results found.</p>
+                    <% } %>
+                </ul>
             </div>
-                
-            </section>
+              
 
             <!--==================== POPULAR ====================-->
             <section class="popular section" id="popular">
                 <div class="container">
-                    <sapn class="section__subtitle">Best Choice And Comparision</sapn>
+                    <sapn class="section__subtitle">Best Choice</sapn>
                     <h2 class="section__title">
-                        Your Following Result<span> : </span>
+                        Popular Residences<span> : </span>
                     </h2>
                     
                     <div id ="popular__container swiper">
                         <div id="popular__data1">
-                            <img src="assets/img/popular1.jpg" alt="" class="popular__img">
+                            <img src="/assets/img/popular1.jpg" alt="" class="popular__img">
                             <div id="pop1">
                                  
                             </div>   
                         </div>
                         
                         <div id="popular__data2">
-                            <img src="assets/img/popular2.jpg" alt="" class="popular__img">
+                            <img src="/assets/img/popular2.jpg" alt="" class="popular__img">
                             <div id="pop2">
                                 
                             </div>  
@@ -178,45 +175,36 @@
                     </div>
                 </div>
             </section>
-                        
 
-                        <!-- <div id="popular__data3">
-                            <img src="assets/img/popular1.jpg" alt="" class="popular__img">
-                            <div id="pop3">
-                                
-                            </div>   
-                        </div> -->
-                    <!-- <article class="popular__card swiper-slide">
-                    </article> -->
-                    <!-- <div class="swiper-wrapper">
-                    </div> -->
-                        <!-- <article class="popular__card swiper-slide">
-                        </article> -->
-                        <!-- <article class="popular__card swiper-slide">
-                        </article> -->
-                        <!-- <div class="swiper-button-next">
-                            <i class='bx bx-chevron-right'></i>
-                        </div>
-                        <div class="swiper-button-prev">
-                            <i class='bx bx-chevron-left'></i>
-                        </div> -->
-
-                
-                
-            
-
+             <!--==================== LOGOS ====================-->
+             <section class="logos section">
+                <div class="logos__container container grid">
+                    <div class="logos__img">
+                        <img src="/assets/img/logo1.png" alt="">
+                    </div>
+                    <div class="logos__img">
+                        <img src="/assets/img/logo2.png" alt="">
+                    </div>
+                    <div class="logos__img">
+                        <img src="/assets/img/logo3.png" alt="">
+                    </div>
+                    <div class="logos__img">
+                        <img src="/assets/img/logo4.png" alt="">
+                    </div>
+                </div>
+                    
+                </section>
+                    
             <!--==================== VALUE ====================-->
             <section class="value section" id="value">
                 <div class="value__container container grid">
                     <div class="value__images">
                         <div class="value__orbe">
                             <div class="value__img">
-                                <img src="assets/img/value.jpg" alt="">
+                                <img src="/assets/img/value.jpg" alt="">
                             </div>
                         </div>
                     </div>
-
-
                     <div id ="value__content">
                         <div class="value__data">
                             <span class="section__subtitle">Our value</span>
@@ -260,7 +248,7 @@
                                 <div class="value__accordion-content">
                                     <p class="value__accordion-description">
                                         Price we provide is the best for you.
-                                        we gurantee no price change on your property due to various unexpected costs that may come.
+                                        we guarantee no price change on your property due to various unexpected costs that may come.
                                     </p>
                                 </div>
                             </div>
@@ -303,7 +291,6 @@
                         </div>
                     </div>
                 </div>
-                
             </section>
 
             <!--==================== CONTACT ====================-->
@@ -312,7 +299,7 @@
                     <div class="contact__images">
                         <div class="contact__orbe">
                             <div class="contact__img">
-                                <img src="assets/img/contact.png" alt="">
+                                <img src="/assets/img/contact.png" alt="">
                             </div>
                         </div>
 
@@ -401,7 +388,6 @@
                         </div>
                     </div>
                 </div>
-                
             </section>
 
             <!--==================== SUBSCRIBE ====================-->
@@ -415,7 +401,7 @@
                         quotes from us, Find your residence soon
                     </p>
                 
-                <a href="http://127.0.0.1:5500/responsive-real-state-website-main/HolexLoginPage/newindex.html" class="button subscribe__button">
+                <a href="/login" class="button subscribe__button">
                     Login
                 </a>
                 </div>
@@ -478,7 +464,7 @@
                                 <a href="#" class="footer__link">FAQs</a>
                             </li>
                             <li>
-                                <a href="#" class="footer__link">Support center</a>
+                                <a href="#" class="footer__link">Support Center</a>
                             </li>
                             <li>
                                 <a href="#" class="footer__link">Contact Us</a>
@@ -507,7 +493,7 @@
 
             <div class="footer__info container">
                 <span class="fotter__copy">
-                    &#169; Realstate ,all rights reserved
+                    &#169; RealEstate. All rights reserved
                 </span>
 
                 <div class="footer__privacy">
@@ -515,163 +501,69 @@
                     <a href="#" class="">Privacy policy</a>
                 </div>
             </div>
-
         </footer>
-
 
         <!--========== SCROLL UP ==========-->
         <a href="#" class="scrollup" id="scroll-up">
             <i class='bx bx-chevrons-up'></i>
         </a>
 
-
         <!--=============== SCROLLREVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
+        <script src="/assets/js/scrollreveal.min.js"></script>
 
         <!--=============== SWIPER JS ===============-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="/assets/js/swiper-bundle.min.js"></script>
 
         <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-
-
+        <script src="/assets/js/main.js"></script>
         
-        <script>
-            document.getElementById('search_e').addEventListener('click',test)
-                function test(){
-                document.getElementById('pop1').innerHTML="Pending.....!";
-                    setTimeout(()=>{           
-                    fetch('api1.json').then((result)=>{
-                        return result.json();
-                }).then((record)=>{
-                  console.log(record);
-                  for(let x in record){
-                   document.getElementById("pop1").innerHTML= `Location : ${record[x].Location} <br> Size: ${record[x].Size} <br> Own Amount: ${record[x].OwnAmount}
-                                                               <br> Rent : ${record[x].Rent} <br> Star : ${record[x].Star} <br> Semifurniush: ${record[x].Semifurniush}<br> <br>`
-                    console.log(`Location : ${record[x].Location} <br> Size: ${record[x].Size} <br> Own Amount: ${record[x].OwnAmount}
-                                <br> Rent : ${record[x].Rent} <br> Star : ${record[x].Star} <br> Semifurniush: ${record[x].Semifurniush}`);
-                    console.log( record[x]);
-                  }
-                })
-              },2000)
-            }  
-            
-            document.getElementById('search_e').addEventListener('click',test)
-                function test(){
-                document.getElementById('pop2').innerHTML="Pending.....!";
-                    setTimeout(()=>{           
-                    fetch('api2.json').then((result)=>{
-                        return result.json();
-                }).then((record)=>{
-                  console.log(record);
-                  for(let x in record){
-                   document.getElementById("pop2").innerHTML= `Location : ${record[x].Location} <br> Size: ${record[x].Size} <br> Own Amount: ${record[x].OwnAmount}
-                                                               <br> Rent : ${record[x].Rent} <br> Star : ${record[x].Star} <br> Semifurniush: ${record[x].Semifurniush}<br> <br>`
-                    console.log(`Location : ${record[x].Location} <br> Size: ${record[x].Size} <br> Own Amount: ${record[x].OwnAmount}
-                                <br> Rent : ${record[x].Rent} <br> Star : ${record[x].Star} <br> Semifurniush: ${record[x].Semifurniush}`);
-                    console.log( record[x]);
-                  }
-                })
-              },2000)
-            }  
+        <script>    
+    document.querySelector('.home__search').addEventListener('submit', function (evt) {
+    evt.preventDefault();
+    
+    // Get the search location from the input field
+    const location = document.querySelector('#myInput').value;
 
-    function filter() {
-	const ul = document.getElementById("search_e");
-	var a = document.getElementById("api2.json");
-	var b = a.options[a.selectedIndex].value;
-	
-	var showresults = prepareFilterData(datum, b, selectedItems);
-	console.log(showresults);
-	showresults ? counterResults(showresults) : null;
+    // Send an AJAX request to fetch and display search results
+    fetch(`/?location=${encodeURIComponent(location)}`)
+      .then(response => response.json())
+      .then(houselistings => {
+        // Handle the received search results
+        displaySearchResults(houselistings);
+      })
+      .catch(error => {
+        console.error('Error fetching search results:', error);
+      });
+
+    return false; // Prevent the default form submission
+  });
+
+  function displaySearchResults(houselistings) {
+    const searchResultsContainer = document.getElementById('searchResultsContainer');
+    
+    // Clear any previous results
+    searchResultsContainer.innerHTML = '';
+
+    if (houselistings.length === 0) {
+        searchResultsContainer.innerHTML = '<p>No results found.</p>';
+    } else {
+        houselistings.forEach(house => {
+            const resultElement = document.createElement('div');
+            resultElement.className = 'search-result';
+            resultElement.innerHTML = `
+                <li> 
+                    Property Name: ${house.title}<br>
+                    Size: ${house.size}<br>
+                    Own Amount: ${house.ownAmount}<br>
+                    Rent: ${house.rent}<br>
+                    Star: ${house.star}<br>
+                    Semifurnished: ${house.semiFurnished ? 'Yes' : 'No'}<br><br>
+                </li>
+            `;
+            searchResultsContainer.appendChild(resultElement);
+        });
+    }
 }
-
-function counterResults(showresults) {
-	if (showresults["count"] > 0) {
-		ul.innerHTML = showresults["results"];
-	} else {
-		ul.innerHTML = "No results found";
-	}
-}
-
-function prepareFilterData(datum, b, selectedItems) {
-	var results = "";
-	var count = 0;
-	datum.map(function (author) {
-		if (b === author.gender) {
-			if (selectedItems.length == 0) {
-				count++;
-				results += prepareList(author);
-			} else {
-				for (var i = 0; i < selectedItems.length; i++) {
-					if (author.location === selectedItems[i]) {
-						count++;
-						console.log(author.location.country, author.name, i);
-						results += prepareList(author);
-					}
-				}
-			}
-		} else if (b === "all") {
-			console.log(b);
-			if (selectedItems.length == 0) {
-				count++;
-				results += prepareList(author);
-			}
-			for (var i = 0; i < selectedItems.length; i++) {
-				if (author.location.country === selectedItems[i]) {
-					count++;
-					results += prepareList(author);
-				}
-			}
-			console.log(results);
-		}
-	});
-
-	return { count: count, results: results };
-}
-
-/*-------searching-------*/
-function showResults() {
-	const ul = document.getElementById("search_e");
-	var showresults = search(author);
-	console.log(showresults);
-	showresults ? counterResults(showresults) : null;
-}
-
-function search() {
-	var results = "";
-	var count = 0;
-	var searchText = document.getElementById("pop2").value;
-	console.log(searchText, datum);
-	datum.map(function (author) {
-		var text = author.email;
-		var slicedText = text.slice(0, searchText.length);
-		if (searchText === slicedText) {
-			count++;
-			results += prepareList(author);
-		}
-	});
-	console.log(results, count);
-	return { count: count, results: results };
-}
-
-            // document.getElementById('search_e').addEventListener('click',test)
-            //     function test(){
-            //     document.getElementById('pop3').innerHTML="Pending.....!";
-            //         setTimeout(()=>{           
-            //         fetch('api3.json').then((result)=>{
-            //             return result.json();
-            //     }).then((record)=>{
-            //       console.log(record);
-            //       for(let x in record){
-            //        document.getElementById("pop3").innerHTML= `Location : ${record[x].Location} <br> Size: ${record[x].Size} <br> Own Amount: ${record[x].OwnAmount}
-            //                                                    <br> Rent : ${record[x].Rent} <br> Star : ${record[x].Star} <br> Semifurniush: ${record[x].Semifurniush}<br> <br>`
-            //         console.log(`Location : ${record[x].Location} <br> Size: ${record[x].Size} <br> Own Amount: ${record[x].OwnAmount}
-            //                     <br> Rent : ${record[x].Rent} <br> Star : ${record[x].Star} <br> Semifurniush: ${record[x].Semifurniush}`);
-            //         console.log( record[x]);
-            //       }
-            //     })
-            //   },2000)
-            // }  
         </script>
     </body>
 </html>
