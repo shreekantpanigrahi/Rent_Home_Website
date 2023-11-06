@@ -3,14 +3,27 @@ const path = require('path');
 const app = express();
 const mongoose = require('mongoose');
 const HouseListing = require('./models/HouseListing');
+const filter = require('./searchFilter');
 const port = process.env.PORT || 3000;
 require('dotenv').config();
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
-mongoose.connect(process.env.MONGODB_URI)
-app.use(express.static(path.join(__dirname, 'public')));
 
-  app.get('/', async (req, res) => {
+const connectDB = async () => {
+  try {
+    await mongoose.connect(process.env.MONGODB_URI);
+    console.log('MongoDB connected');
+  } catch(err) { 
+    console.error(err.message);
+    process.exit(1);
+  }
+};
+connectDB();
+
+app.use(express.static(path.join(__dirname, 'public')));
+app.use('/', filter);
+
+app.get('/', async (req, res) => {
     let houselistings = [];
     if (req.query.location) {
       try {

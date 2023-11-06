@@ -2,7 +2,7 @@
   "name": "real-estate-responsive",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "dev": "nodemon app.js"
   },

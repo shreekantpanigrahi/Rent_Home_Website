@@ -8,5 +8,9 @@ const houselistingSchema = new mongoose.Schema({
     star: Number,
     semiFurnished: Boolean,
 })
+
+// Add a text index on the 'location' field
+houselistingSchema.index({ location: 'text' });
+
 const HouseListing = mongoose.model('HouseListing', houselistingSchema);
 module.exports = HouseListing;
