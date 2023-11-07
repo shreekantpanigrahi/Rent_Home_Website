@@ -518,7 +518,7 @@
         <script src="/assets/js/main.js"></script>
         
         <script>    
-    document.querySelector('.home__search').addEventListener('submit', function (evt) {
+     document.querySelector('.home__search').addEventListener('submit', function (evt) {
     evt.preventDefault();
     
     // Get the search location from the input field
@@ -537,7 +537,6 @@
 
     return false; // Prevent the default form submission
   });
-
   function displaySearchResults(houselistings) {
     const searchResultsContainer = document.getElementById('searchResultsContainer');
     

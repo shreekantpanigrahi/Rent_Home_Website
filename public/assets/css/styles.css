@@ -1175,7 +1175,11 @@ color : var( --first-color);
   .home__description,
   .home__search{
     margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
+
   .home__value{
     column-gap: 3.5rem;
   }
